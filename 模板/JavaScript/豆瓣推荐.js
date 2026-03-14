@@ -2,8 +2,8 @@
 // @indexs 1
 // @author lampon
 // @description 豆瓣推荐爬虫脚本
-// @version 1.0.1
-// @downloadURL https://xget.xi-xu.me/gh/Silent1566/OmniBox-Spider/raw/refs/heads/main/模板/JavaScript/豆瓣推荐.js
+// @version 1.0.3
+// @downloadURL https://gh-proxy.org/https://github.com/Silent1566/OmniBox-Spider/raw/refs/heads/main/%E6%A8%A1%E6%9D%BF/JavaScript/%E8%B1%86%E7%93%A3%E6%8E%A8%E8%8D%90.js
 
 const OmniBox = require("omnibox_sdk");
 
@@ -277,7 +277,7 @@ async function home(params, context) {
           init: "", // 默认值：全部（空字符串）
           value: [
             { name: "全部", value: "" },
-            { name: "2020年代", value: "2020年代" },
+            { name: "2026", value: "2026" },
             { name: "2025", value: "2025" },
             { name: "2024", value: "2024" },
             { name: "2023", value: "2023" },
@@ -285,6 +285,7 @@ async function home(params, context) {
             { name: "2021", value: "2021" },
             { name: "2020", value: "2020" },
             { name: "2019", value: "2019" },
+            { name: "2020年代", value: "2020年代" },
             { name: "2010年代", value: "2010年代" },
             { name: "2000年代", value: "2000年代" },
             { name: "90年代", value: "90年代" },
@@ -377,7 +378,7 @@ async function home(params, context) {
           init: "", // 默认值：全部（空字符串）
           value: [
             { name: "全部", value: "" },
-            { name: "2020年代", value: "2020年代" },
+            { name: "2026", value: "2026" },
             { name: "2025", value: "2025" },
             { name: "2024", value: "2024" },
             { name: "2023", value: "2023" },
@@ -385,6 +386,7 @@ async function home(params, context) {
             { name: "2021", value: "2021" },
             { name: "2020", value: "2020" },
             { name: "2019", value: "2019" },
+            { name: "2020年代", value: "2020年代" },
             { name: "2010年代", value: "2010年代" },
             { name: "2000年代", value: "2000年代" },
             { name: "90年代", value: "90年代" },
@@ -480,7 +482,7 @@ async function home(params, context) {
           init: "", // 默认值：全部（空字符串）
           value: [
             { name: "全部", value: "" },
-            { name: "2020年代", value: "2020年代" },
+            { name: "2026", value: "2026" },
             { name: "2025", value: "2025" },
             { name: "2024", value: "2024" },
             { name: "2023", value: "2023" },
@@ -488,6 +490,7 @@ async function home(params, context) {
             { name: "2021", value: "2021" },
             { name: "2020", value: "2020" },
             { name: "2019", value: "2019" },
+            { name: "2020年代", value: "2020年代" },
             { name: "2010年代", value: "2010年代" },
             { name: "2000年代", value: "2000年代" },
             { name: "90年代", value: "90年代" },
