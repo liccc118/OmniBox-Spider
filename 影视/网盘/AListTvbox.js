@@ -1,9 +1,9 @@
-// @name 小雅
+// @name AListTvbox
 // @author @sifanss
 // @description 必填参数：BASE_URL，XIAOYA_TOKEN。刮削：支持，弹幕：支持
 // @dependencies: axios
-// @version 1.0.3
-// @downloadURL https://gh-proxy.org/https://github.com/Silent1566/OmniBox-Spider/raw/refs/heads/main/影视/网盘/小雅.js
+// @version 1.0.4
+// @downloadURL https://gh-proxy.org/https://github.com/Silent1566/OmniBox-Spider/raw/refs/heads/main/影视/网盘/AListTvbox.js
 
 // 引入 OmniBox SDK
 const OmniBox = require("omnibox_sdk");
@@ -19,14 +19,14 @@ const http = require("http");
 const https = require("https");
 
 // ==================== 配置区域 ====================
-// Alist Tvbox接口地址（支持通过环境变量覆盖）
+// Alist Tvbox接口地址，目前只支持 4567 端口（支持通过环境变量覆盖）
 // 示例：http://127.0.0.1:4567
 const BASE_URL = process.env.XIAOYA_BASE_URL || "http://127.0.0.1:4567";
-
+// AListTvbox 安全订阅
+const ALIST_TVBOX_TOKEN = process.env.ALIST_TVBOX_TOKEN || process.env.XIAOYA_TOKEN || "";
 // 小雅接口路径（如有变化可通过环境变量覆盖）
-const XIAOYA_TOKEN = process.env.XIAOYA_TOKEN || "";
-const VOD_PATH = `/vod1/${XIAOYA_TOKEN}` ;
-const PLAY_PATH = `/play/${XIAOYA_TOKEN}`;
+const VOD_PATH = `/vod1/${ALIST_TVBOX_TOKEN}` ;
+const PLAY_PATH = `/play/${ALIST_TVBOX_TOKEN}`;
 
 // 是否启用本地代理（用于非 115/本地路由播放地址）
 const ENABLE_LOCAL_PROXY = (process.env.XIAOYA_ENABLE_PROXY || "1") === "1";
